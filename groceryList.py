@@ -14,7 +14,7 @@ def ingredientsPage():
     with open ('ingredients.csv') as f:
         reader = csv.DictReader(f)
         for row in reader:
-            print(row['ingredient'])
+            #print(row['ingredient'])
             ingList.append({'ingredient':row['ingredient'],'status':row['status']})
         #print(ingList)
     return render_template('ingredients.html',ingList=ingList)
