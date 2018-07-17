@@ -21,11 +21,11 @@ def ingredientsPage():
 
 @app.route('/list')
 def listPage():
-    return 'List Page'
+    return render_template('list.html')
 
 @app.route('/associations')
 def assocPage():
-    return 'Associations Page'
+    return render_template('associations.html')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")

@@ -1,12 +1,21 @@
+body{
+	font-family: Arial,Helvetica,sans-serif;
+	background-color: #F5F5F5;
+}
+
+.mainTitle{
+	float: left;
+}
+
 .itemBtn{
 	background-color: #33c7ff;
 	border: none;
 	color: white;
-	padding: 15px 32px;
+	padding: 10px 25px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 14px;
 	margin: 4px 2px;
 	cursor: pointer;
 }
@@ -17,4 +26,83 @@
 
 .itemBtn:active{
 	background-color: DarkGray;
+}
+
+.navBar{
+	padding: 15px;
+	margin: 30px;
+	border: 2px solid LightGray; 
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.ingTable{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navlist{
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+.navelem{
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-bottom: 2px solid #F5F5F5;
+	padding: 5px; 
+}
+
+.navelem a{
+	padding: 10px;
+	text-decoration: none;
+	color: #33c7ff;
+}
+
+.navelem:hover{
+	text-decoration: none;
+	color: #33c7ff;
+	border-bottom: 2px solid #33c7ff;
+	/*line-height: 1.09;*/
+}
+
+.navelem a:visited{
+	color: #33c7ff;
+}
+
+.addItemIcon{
+	margin-left: auto;
+	margin-right: auto;
+	float: right;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%; 
+	padding: 8px;
+	background-color: blue;
+	border: 2px solid white;
+}
+.addNewItem{
+	padding: 20px;
+	margin: auto;
+}
+.addItemBtn{
+	/*float: right;*/
+	margin-left: auto;
+	margin-right: auto;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%; 
+        background-color: #33c7ff;
+	padding: 12px 12px;
+        text-decoration: none;
+}
+
+.addItemBtn:hover{
+	width: 40px;
+	height: 40px;
+	background-color: LightGray;
 }

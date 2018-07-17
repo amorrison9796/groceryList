@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+		<title>Grocery List</title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='logogoeshere.ico') }}">
+		
+		<div>
+			<h1>Grocery List</h1>
+		</div>
+		<div class="navBar">
+			<ul class="navlist">
+				<li class="navelem"><a href="{{ url_for("ingredientsPage") }}">Ingredients</a></li>
+				<li class="navelem"><a href="{{ url_for("listPage")  }}">List</a></li>
+				<li class="navelem"><a href="{{ url_for("assocPage") }}">Associations</a></li>
+			</ul>
+		</div>
+	</head>
+	<body>
+		{% block content %} {% endblock %}
+	</body>
+</html>

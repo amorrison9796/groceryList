@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<html>
-<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
-    <body>
-        <table>
+
+{% extends "base.html" %}
+{% block content %}
+	<table class="ingTable">
         {% for i in ingList %}
 		{% if loop.index % 5 == 1 %}
 			<tr>
@@ -13,5 +12,8 @@
                 {% endif %}
         {% endfor %}
         </table>
-    </body>
-</html>
+	
+	<div class="addNewItem">
+		<input type="image" src="/static/addCross.ico" class="addItemBtn"></input>
+	</div>
+{% endblock %}
