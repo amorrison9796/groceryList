@@ -63,9 +63,15 @@ body{
 	color: #33c7ff;
 }
 
+.navelem a:active{
+	padding: 50px;
+	color: blue;
+	text-decoration: none;
+        border-bottom: 2px solid #33c7ff;
+}
+
 .navelem:hover{
 	text-decoration: none;
-	color: #33c7ff;
 	border-bottom: 2px solid #33c7ff;
 	/*line-height: 1.09;*/
 }
