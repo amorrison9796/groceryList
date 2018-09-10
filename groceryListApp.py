@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import render_template
+from groceryList import GroceryList, GroceryItem
 import csv
 
 app = Flask(__name__)
@@ -10,13 +11,21 @@ def mainPage():
 
 @app.route('/ingredients')
 def ingredientsPage():
+    groceries = GroceryList()
+    groceries.readList()
+    grocList = groceries.getList()
+
     ingList = []
-    with open ('ingredients.csv') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            #print(row['ingredient'])
-            ingList.append({'ingredient':row['ingredient'],'status':row['status']})
-        #print(ingList)
+    
+    for i in grocList:
+        ingList.append(i.name)
+##    ingList = []
+##    with open ('ingredients.csv') as f:
+##        reader = csv.DictReader(f)
+##        for row in reader:
+##            #print(row['ingredient'])
+##            ingList.append({'ingredient':row['ingredient'],'status':row['status']})
+##        #print(ingList)
     return render_template('ingredients.html',ingList=ingList)
 
 @app.route('/list')

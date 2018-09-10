@@ -1,0 +1,19 @@
+
+{% extends "base.html" %}
+{% block content %}
+	<table class="ingTable">
+        {% for i in ingList %}
+		{% if loop.index % 5 == 1 %}
+			<tr>
+		{% endif %}
+            <td style="text-align:center"><button class="itemBtn">{{ i }}</button></td>
+		{% if loop.index % 5 == 5 %}
+                        </tr>
+                {% endif %}
+        {% endfor %}
+        </table>
+	
+	<div class="addNewItem">
+		<input type="image" src="/static/addCross.ico" class="addItemBtn"></input>
+	</div>
+{% endblock %}

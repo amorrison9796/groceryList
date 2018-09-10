@@ -1,19 +1,18 @@
-
 {% extends "base.html" %}
 {% block content %}
-	<table class="ingTable">
+
+<table>
+<tr>
+<td>
+	<div class="stockMenu">
         {% for i in ingList %}
-		{% if loop.index % 5 == 1 %}
-			<tr>
-		{% endif %}
-            <td style="text-align:center"><button class="itemBtn">{{ i.ingredient }}</button></td>
-		{% if loop.index % 5 == 5 %}
-                        </tr>
-                {% endif %}
+		<a href="#">{{ i }}</a>
         {% endfor %}
-        </table>
-	
-	<div class="addNewItem">
-		<input type="image" src="/static/addCross.ico" class="addItemBtn"></input>
 	</div>
+</td>
+<td>
+placeholder
+</td>
+<tr>
+</table>
 {% endblock %}

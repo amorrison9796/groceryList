@@ -112,3 +112,25 @@ body{
 	height: 40px;
 	background-color: LightGray;
 }
+
+.stockMenu {
+    width: 100%;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.stockMenu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.stockMenu a:hover {
+    background-color: #ccc;
+}
+
+.stockMenu a.active {
+    background-color: #4CAF50;
+    color: white;
