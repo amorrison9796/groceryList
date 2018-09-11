@@ -1,44 +1,44 @@
-idNum,item,stock
-01,Bread,0
-02,Sour Dough Bread,0
-03,Mac & Cheese,0
-04,Ramen,0
-05,Beef,0
-06,Chicken,0
-07,Hot Dogs,0
-08,Hot Dog Buns,0
-09,Hamburger Buns,0
-0A,Tuna,0
-0B,Eggs,0
-0C,Cereal,0
-0D,Bananas,0
-0E,Apples,0
-0F,Oranges,0
-10,Fruit Cups,0
-11,Frozen Peas,0
-12,Frozen Broccooli,0
-13,Frozen Corn,0
-14,Fresh Veggies,0
-15,Soup,0
-16,Sauce,0
-17,Noodles,0
-18,Pretzels,0
-19,Chips,0
-1A,Yogurt,0
-1B,Peanut Butter,0
-1C,Jelly,0
-1D,Pickles,0
-1E,Bacon,0
-1F,Tortillas,0
-20,Acai Berries,0
-21,Cookies,0
-22,Craisins,0
-23,Cheese Sticks,0
-24,Frozen Meals,0
-25,Ketchup,0
-26,Mustard,0
-27,Mayo,0
-28,Cottage Cheese,0
-29,Waffles,0
-2A,Syrup,0
-2B,Milk,0
+idNum,name,stock
+0x01,Bread,0,
+0x02,Sour Dough Bread,0,
+0x03,Mac & Cheese,0,
+0x04,Ramen,0,
+0x05,Beef,0,
+0x06,Chicken,0,
+0x07,Hot Dogs,0,
+0x08,Hot Dog Buns,0,
+0x09,Hamburger Buns,0,
+0x0A,Tuna,0,
+0x0B,Eggs,0,
+0x0C,Cereal,0,
+0x0D,Bananas,0,
+0x0E,Apples,0,
+0x0F,Oranges,0,
+0x10,Fruit Cups,0,
+0x11,Frozen Peas,0,
+0x12,Frozen Broccooli,0,
+0x13,Frozen Corn,0,
+0x14,Fresh Veggies,0,
+0x15,Soup,0,
+0x16,Sauce,0,
+0x17,Noodles,0,
+0x18,Pretzels,0,
+0x19,Chips,0,
+0x1A,Yogurt,0,
+0x1B,Peanut Butter,0,
+0x1C,Jelly,0,
+0x1D,Pickles,0,
+0x1E,Bacon,0,
+0x1F,Tortillas,0,
+0x20,Acai Berries,0,
+0x21,Cookies,0,
+0x22,Craisins,0,
+0x23,Cheese Sticks,0,
+0x24,Frozen Meals,0,
+0x25,Ketchup,0,
+0x26,Mustard,0,
+0x27,Mayo,0,
+0x28,Cottage Cheese,0,
+0x29,Waffles,0,
+0x2A,Syrup,0,
+0x2B,Milk,0,

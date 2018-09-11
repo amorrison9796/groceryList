@@ -13,7 +13,7 @@ def mainPage():
 def ingredientsPage():
     groceries = GroceryList()
     groceries.readList()
-    grocList = groceries.getList()
+    grocList = groceries.itemList
 
     ingList = []
     
