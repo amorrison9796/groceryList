@@ -19,7 +19,7 @@ class GroceryList:
         with open ('items.csv','w') as f:
             f.write('idNum,name,stock\n')
             for i in self.itemList:
-                f.write(i.idNum+','+i.name+','+str(i.stock)+'\n')
+                f.write(hex(int(i.idNum,16))+','+i.name+','+str(i.stock)+'\n')
 
     def addItem(self, name, stock):
         #add new item to the grocery list
@@ -31,9 +31,11 @@ class GroceryList:
         
         self.itemList.append(GroceryItem(str(newId),str(name),int(stock)))
 
-    def removeItem():
-        pass
-
+    def removeItem(self,idNum):
+        #remove item from the grocery list 
+        for i in self.itemList:
+            if i.idNum == idNum:
+                self.itemList.remove(i)
 
 class GroceryItem:
 
@@ -61,6 +63,7 @@ if __name__ == "__main__":
 
     grocList.addItem('Beans',0)
     grocList.addItem('Salmon',1)
+    grocList.removeItem('0x2c')
     
     grocList.writeList()
         
