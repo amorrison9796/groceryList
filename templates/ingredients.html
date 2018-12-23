@@ -6,13 +6,29 @@
 <td>
 	<div class="stockMenu">
         {% for i in ingList %}
-		<a href="#">{{ i }}</a>
+        	<button onclick="switchSide({{ i.idNum }});" id="{{ i.idNum }}" class="thisButtonIsForItems">{{ i.name }}</button>
+			<!--<a href="#">{{ i }}</a>-->
         {% endfor %}
 	</div>
 </td>
 <td>
-placeholder
+	<div class="stockMenu">
+        {% for i in ingList %}
+        	<button onclick="switchSide({{ i.idNum }});" id="{{ i.idNum }}" class="thisButtonIsForItems">{{ i.name }}</button>
+			<!--<a href="#">{{ i }}</a>-->
+        {% endfor %}
+    </div>    
 </td>
 <tr>
 </table>
+
+<script>
+	function switchSide(id)
+	{
+		//document.write(id);
+
+		document.getElementById(String(id)).style.display = "none";
+	}
+	//switchSide("0x1");
+</script>
 {% endblock %}

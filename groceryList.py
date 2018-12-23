@@ -32,7 +32,7 @@ class GroceryList:
         self.itemList.append(GroceryItem(str(newId),str(name),int(stock)))
 
     def removeItem(self,idNum):
-        #remove item from the grocery list 
+        #remove item from the grocery list using ID number
         for i in self.itemList:
             if i.idNum == idNum:
                 self.itemList.remove(i)
@@ -57,13 +57,13 @@ if __name__ == "__main__":
     grocList = GroceryList()
     grocList.readList()
 
-    for i in grocList.itemList:
-        #i.setStock(0)
-        print(i.idNum, i.name, i.stock)
+    #for i in grocList.itemList:
+        ##i.setStock(0)
+        #print(i.idNum, i.name, i.stock)
 
-    grocList.addItem('Beans',0)
-    grocList.addItem('Salmon',1)
-    grocList.removeItem('0x2c')
+    #grocList.addItem('Beans',0)
+    #grocList.addItem('Salmon',1)
+    #grocList.removeItem('0x2c')
     
-    grocList.writeList()
+    #grocList.writeList()
         

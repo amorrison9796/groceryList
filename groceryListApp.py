@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def mainPage():
-    return 'Hello'
+    return render_template('mainPage.html')
 
 @app.route('/ingredients')
 def ingredientsPage():
@@ -18,7 +18,8 @@ def ingredientsPage():
     ingList = []
     
     for i in grocList:
-        ingList.append(i.name)
+        ingList.append(i)
+        #ingList.append({"name":i.name,"idNum":i.idNum})
 ##    ingList = []
 ##    with open ('ingredients.csv') as f:
 ##        reader = csv.DictReader(f)

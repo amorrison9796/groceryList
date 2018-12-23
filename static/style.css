@@ -141,3 +141,21 @@ body{
 .stockMenu a.active {
     background-color: #4CAF50;
     color: white;
+}
+
+.thisButtonIsForItems{
+	background-color: #eee;
+	padding: 12px;
+	border: none;
+	width: 100%;
+	text-align: left;
+	color: black;
+	font-size: 18px;
+}
+
+.thisButtonIsForItems:hover{
+	background-color: white;
+}
+.welcomeTitle{
+	text-align: center;
+}
